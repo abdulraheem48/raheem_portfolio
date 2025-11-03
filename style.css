@@ -1,184 +1,185 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'); /* Imports Poppins font */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  font-family: 'Poppins', sans-serif;
+/* Reset and global setup */
+* { /* Applies to all elements */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  box-sizing: border-box; /* Includes padding and border in element size */
+  scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+  font-family: 'Poppins', sans-serif; /* Sets default font */
 }
 
-:root {
-  --bg-color: #081b29;
-  --second-bg-color: #112e42;
-  --text-color: #ededed;
-  --main-color: #00abf0;
+:root { /* Root-level CSS variables for colors */
+  --bg-color: #081b29; /* Background color */
+  --second-bg-color: #112e42; /* Secondary background for sections */
+  --text-color: #ededed; /* Primary text color */
+  --main-color: #00abf0; /* Accent color for highlights */
 }
 
-body {
-  background: var(--bg-color);
-  color: var(--text-color);
+body { /* Applies to entire page */
+  background: var(--bg-color); /* Sets background using variable */
+  color: var(--text-color); /* Sets text color */
 }
 
-/* Header */
-.header {
-  position: fixed;
-  width: 100%;
-  padding: 2rem 9%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: rgba(8, 27, 41, 0.9);
-  z-index: 100;
+/* Header Styles */
+.header { /* Styles header bar */
+  position: fixed; /* Keeps header fixed on top */
+  width: 100%; /* Spans entire width */
+  padding: 2rem 9%; /* Adds vertical and horizontal padding */
+  display: flex; /* Flexbox for layout */
+  justify-content: space-between; /* Spaces logo and navbar apart */
+  align-items: center; /* Vertically centers items */
+  background: rgba(8, 27, 41, 0.9); /* Semi-transparent background */
+  z-index: 100; /* Ensures header stays on top */
 }
 
-.logo {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--main-color);
-  text-decoration: none;
+.logo { /* Styles logo text */
+  font-size: 2.5rem; /* Large font size */
+  font-weight: 700; /* Bold text */
+  color: var(--main-color); /* Highlighted color */
+  text-decoration: none; /* Removes underline */
 }
 
-.navbar a {
-  font-size: 1.6rem;
-  color: var(--text-color);
-  margin-left: 3.5rem;
-  transition: 0.3s;
+.navbar a { /* Styles navigation links */
+  font-size: 1.6rem; /* Text size */
+  color: var(--text-color); /* Default link color */
+  margin-left: 3.5rem; /* Space between links */
+  transition: 0.3s; /* Smooth hover animation */
 }
 
 .navbar a:hover,
-.navbar a.active {
-  color: var(--main-color);
+.navbar a.active { /* Active and hover state */
+  color: var(--main-color); /* Changes color to accent */
 }
 
 /* Home Section */
-.home {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 100vh;
-  padding: 0 9%;
+.home { /* Container for home section */
+  display: flex; /* Horizontal layout */
+  align-items: center; /* Center vertically */
+  justify-content: space-between; /* Image and text apart */
+  height: 100vh; /* Full viewport height */
+  padding: 0 9%; /* Side padding */
 }
 
-.home-content {
-  max-width: 600px;
+.home-content { /* Text area styling */
+  max-width: 600px; /* Limits width for readability */
 }
 
-.home-content h1 {
-  font-size: 4rem;
-  margin-bottom: 0.5rem;
+.home-content h1 { /* Main heading */
+  font-size: 4rem; /* Large font */
+  margin-bottom: 0.5rem; /* Small gap below */
 }
 
-.home-content h1 span {
-  color: var(--main-color);
+.home-content h1 span { /* Highlighted name */
+  color: var(--main-color); /* Accent color */
 }
 
-.text-animate {
-  font-size: 2rem;
-  color: var(--main-color);
-  margin-bottom: 1rem;
-  min-height: 50px;
-  font-weight: 600;
-  text-shadow: 0 0 10px var(--main-color);
-  letter-spacing: 1px;
+.text-animate { /* Typing text animation */
+  font-size: 2rem; /* Font size for animated text */
+  color: var(--main-color); /* Accent color */
+  margin-bottom: 1rem; /* Space below */
+  min-height: 50px; /* Ensures space even when empty */
+  font-weight: 600; /* Medium-bold */
+  text-shadow: 0 0 10px var(--main-color); /* Glow effect */
+  letter-spacing: 1px; /* Spacing between letters */
 }
 
-.btn-box {
-  display: flex;
-  gap: 1rem;
+.btn-box { /* Container for buttons */
+  display: flex; /* Side-by-side buttons */
+  gap: 1rem; /* Space between buttons */
 }
 
-.btn {
-  display: inline-block;
-  padding: 1rem 2rem;
-  background: var(--main-color);
-  color: #081b29;
-  font-weight: 600;
-  border-radius: 0.5rem;
-  text-decoration: none;
-  transition: 0.3s;
+.btn { /* Button styling */
+  display: inline-block; /* Inline element */
+  padding: 1rem 2rem; /* Inside spacing */
+  background: var(--main-color); /* Button color */
+  color: #081b29; /* Text color on button */
+  font-weight: 600; /* Bold text */
+  border-radius: 0.5rem; /* Rounded corners */
+  text-decoration: none; /* Removes underline */
+  transition: 0.3s; /* Smooth hover */
 }
 
-.btn:hover {
-  box-shadow: 0 0 1rem var(--main-color);
-  transform: translateY(-3px);
+.btn:hover { /* Hover animation */
+  box-shadow: 0 0 1rem var(--main-color); /* Glow */
+  transform: translateY(-3px); /* Slight lift */
 }
 
-.home-img img {
-  width: 350px;
-  border-radius: 50%;
-  border: 4px solid var(--main-color);
+.home-img img { /* Profile image styling */
+  width: 350px; /* Fixed width */
+  border-radius: 50%; /* Circle shape */
+  border: 4px solid var(--main-color); /* Colored border */
 }
 
 /* Sections */
-section {
-  padding: 8rem 9%;
+section { /* Applies to all sections */
+  padding: 8rem 9%; /* Top/bottom and sides padding */
 }
 
-.heading {
-  text-align: center;
-  font-size: 3rem;
-  margin-bottom: 2rem;
+.heading { /* Section titles */
+  text-align: center; /* Centers title */
+  font-size: 3rem; /* Large heading */
+  margin-bottom: 2rem; /* Space below heading */
 }
 
-.heading span {
-  color: var(--main-color);
+.heading span { /* Colored part of heading */
+  color: var(--main-color); /* Accent color */
 }
 
 /* Skills */
-.skills-box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
+.skills-box { /* Container for skills */
+  display: flex; /* Flex layout */
+  flex-wrap: wrap; /* Wrap on smaller screens */
+  justify-content: center; /* Centered layout */
+  gap: 1rem; /* Gap between skills */
 }
 
-.skill {
-  background: var(--second-bg-color);
-  padding: 1rem 2rem;
-  border-radius: 0.5rem;
-  border: 1px solid var(--main-color);
+.skill { /* Individual skill badge */
+  background: var(--second-bg-color); /* Section background */
+  padding: 1rem 2rem; /* Inner spacing */
+  border-radius: 0.5rem; /* Rounded shape */
+  border: 1px solid var(--main-color); /* Border with accent */
 }
 
 /* Contact */
-.contact-info {
-  text-align: center;
+.contact-info { /* Contact section container */
+  text-align: center; /* Center text */
 }
 
-.contact-info p {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+.contact-info p { /* Contact text lines */
+  font-size: 1.5rem; /* Slightly large */
+  margin-bottom: 0.5rem; /* Gap below */
 }
 
-.socials a {
-  color: var(--main-color);
-  font-size: 2rem;
-  margin: 0 0.5rem;
-  transition: 0.3s;
+.socials a { /* Social icon links */
+  color: var(--main-color); /* Icon color */
+  font-size: 2rem; /* Icon size */
+  margin: 0 0.5rem; /* Horizontal spacing */
+  transition: 0.3s; /* Smooth hover */
 }
 
-.socials a:hover {
-  color: #fff;
+.socials a:hover { /* Hover state */
+  color: #fff; /* Changes color to white */
 }
 
 /* Certification Links */
-.education-content ul li a {
-  color: var(--text-color);
-  text-decoration: none;
-  font-weight: 500;
-  transition: 0.3s;
+.education-content ul li a { /* Links in certification list */
+  color: var(--text-color); /* Default text color */
+  text-decoration: none; /* No underline */
+  font-weight: 500; /* Medium weight */
+  transition: 0.3s; /* Smooth hover */
 }
 
-.education-content ul li a:hover {
-  color: var(--main-color);
-  text-decoration: underline;
+.education-content ul li a:hover { /* Hover for cert links */
+  color: var(--main-color); /* Highlight color */
+  text-decoration: underline; /* Underline on hover */
 }
 
 /* Footer */
-.footer {
-  text-align: center;
-  padding: 2rem 0;
-  border-top: 1px solid var(--second-bg-color);
-  background: var(--bg-color);
-  color: #aaa;
+.footer { /* Footer styling */
+  text-align: center; /* Centers footer text */
+  padding: 2rem 0; /* Vertical padding */
+  border-top: 1px solid var(--second-bg-color); /* Top border line */
+  background: var(--bg-color); /* Background same as page */
+  color: #aaa; /* Dimmed text color */
 }
