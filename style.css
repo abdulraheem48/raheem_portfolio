@@ -125,6 +125,28 @@ section {
   color: var(--main-color);
 }
 
+/* Certifications */
+.certifications ul {
+  list-style: none;
+  padding: 0;
+}
+
+.certifications ul li {
+  font-size: 1.3rem;
+  margin: 1rem 0;
+}
+
+.certifications ul li a {
+  color: var(--main-color);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.certifications ul li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
 /* Skills */
 .skills-box {
   display: flex;
