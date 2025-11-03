@@ -18,3 +18,4 @@ var typed = new Typed('.typed-text', {
   backDelay: 1200,
   loop: true
 });
+
