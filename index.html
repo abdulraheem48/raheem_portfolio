@@ -1,73 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" /> <!-- Sets character encoding to UTF-8 -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Ensures mobile responsiveness -->
-  <title>Shaik Abdul Raheem | Data Engineer Portfolio</title> <!-- Page title -->
-  <link rel="stylesheet" href="style.css" /> <!-- Links external CSS -->
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Icons library -->
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> <!-- Typed.js for typing animation -->
-</head>
+  <!-- Character encoding -->
+  <meta charset="UTF-8" />
 
+  <!-- Responsive viewport for all devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Page title -->
+  <title>Shaik Abdul Raheem | Data Engineer Portfolio</title>
+
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
 <body>
-  <!-- Header -->
+  <!-- ===== HEADER / NAVBAR ===== -->
   <header class="header">
-    <a href="#" class="logo">Raheem.</a>
+    <a href="#" class="logo">Raheem</a>
     <nav class="navbar">
-      <a href="#home" class="active">Home</a>
+      <!-- Navigation links -->
+      <a href="#home">Home</a>
       <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#certifications">Certifications</a>
       <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <!-- Home Section -->
+  <!-- ===== HOME SECTION ===== -->
   <section class="home" id="home">
     <div class="home-content">
       <h1>Hi, I'm <span>Shaik Abdul Raheem</span></h1>
-      <h3 class="text-animate"><span class="typed-text"></span></h3>
-      <p>Passionate about data pipelines, Azure cloud, and performance optimization.</p>
-      <div class="btn-box">
-        <a href="data/Abdul_Raheem_Wipro_Data_Engineer.pdf" class="btn" target="_blank">Download Resume</a>
-        <a href="#contact" class="btn">Let's Talk</a>
+      <h3>Data Engineer | Cloud Engineer | Big Data Engineer</h3>
+      <p>
+        Passionate Data Engineer with hands-on experience in building scalable data pipelines,
+        automating workflows, and delivering business insights across Azure, AWS, and Databricks.
+        Skilled in transforming raw data into actionable analytics.
+      </p>
+      <div class="social-links">
+        <!-- Social icons -->
+        <a href="https://github.com/abdulraheem48"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/shaik-abdul-raheem-950256176"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:shaikabdulraheem48@gmail.com"><i class="fas fa-envelope"></i></a>
       </div>
     </div>
+    <!-- Profile image -->
     <div class="home-img">
-      <img src="data/profile.jpg" alt="Shaik Abdul Raheem">
+      <img src="data/profile.jpg" alt="Profile" />
     </div>
   </section>
 
-  <!-- About -->
+  <!-- ===== ABOUT SECTION ===== -->
   <section class="about" id="about">
     <h2 class="heading">About <span>Me</span></h2>
-    <p>I'm a Data Engineer with hands-on experience in Azure, Databricks, and Big Data ecosystems.</p>
+    <div class="about-content">
+      <p>
+        I am a Data Engineer with expertise in end-to-end data solutions — from ingestion to analytics.
+        My focus is on designing optimized ETL pipelines, ensuring data quality, and integrating 
+        big data technologies like Spark, Hadoop, and Snowflake with Azure and AWS services.
+      </p>
+      <p>
+        Currently working at Wipro Ltd, I’ve contributed to projects for clients like Optum,
+        Bharat Petroleum, and Apple, focusing on automation, monitoring, and cloud data engineering.
+        My mission is to build data-driven systems that empower intelligent business decisions.
+      </p>
+    </div>
   </section>
 
-  <!-- Education -->
-  <section class="education" id="education">
-    <h2 class="heading">My <span>Education</span></h2>
-    <div class="education-content">
-      <div class="box">
-        <h3>B.Tech - Electrical and Electronics Engineering (2018 - 2021)</h3>
-        <p>Studied core EEE subjects and developed strong analytical problem-solving skills.</p>
-      </div>
+  <!-- ===== SKILLS SECTION ===== -->
+  <section class="skills" id="skills">
+    <h2 class="heading">Technical <span>Skills</span></h2>
+    <div class="skills-container">
+      <!-- Each skill icon -->
+      <div class="skill"><i class="fab fa-python"></i><p>Python</p></div>
+      <div class="skill"><i class="fab fa-aws"></i><p>AWS</p></div>
+      <div class="skill"><i class="fab fa-azure"></i><p>Azure</p></div>
+      <div class="skill"><i class="fas fa-database"></i><p>SQL</p></div>
+      <div class="skill"><i class="fas fa-project-diagram"></i><p>Apache Spark</p></div>
+      <div class="skill"><i class="fas fa-stream"></i><p>Airflow</p></div>
+      <div class="skill"><i class="fas fa-cube"></i><p>Snowflake</p></div>
+      <div class="skill"><i class="fas fa-layer-group"></i><p>Hadoop</p></div>
+      <div class="skill"><i class="fas fa-chart-bar"></i><p>Power BI</p></div>
+      <div class="skill"><i class="fas fa-chart-line"></i><p>Grafana</p></div>
+      <div class="skill"><i class="fas fa-chart-pie"></i><p>Matplotlib</p></div>
+      <div class="skill"><i class="fas fa-code-branch"></i><p>GitHub Actions</p></div>
+      <div class="skill"><i class="fas fa-laptop-code"></i><p>Databricks</p></div>
+      <div class="skill"><i class="fas fa-tools"></i><p>CI/CD</p></div>
+      <div class="skill"><i class="fas fa-brain"></i><p>Problem Solving</p></div>
+    </div>
+  </section>
 
+  <!-- ===== EXPERIENCE SECTION ===== -->
+  <section class="experience" id="experience">
+    <h2 class="heading">Professional <span>Experience</span></h2>
+    <div class="experience-content">
+      <!-- Each job box -->
       <div class="box">
-        <h3>Diploma - Electrical and Electronics Engineering (2015 - 2018)</h3>
-        <p>Hands-on experience in circuits, control panels, and instrumentation.</p>
+        <h3>Wipro Ltd | Client: Optum (UnitedHealth Group)</h3>
+        <h4>Data Engineer | Mar 2024 – Present</h4>
+        <ul>
+          <li>Resolved production issues and improved delivery efficiency.</li>
+          <li>Ensured SLA compliance for client data pipelines and reporting.</li>
+          <li>Collaborated cross-functionally for system stability and optimization.</li>
+          <li>Automated repetitive workflows for better productivity.</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>Wipro Ltd | Client: Bharat Petroleum</h3>
+        <h4>Data Engineer | Jun 2023 – Feb 2024</h4>
+        <ul>
+          <li>Developed 40+ KPIs using PySpark and Databricks for business insights.</li>
+          <li>Built ADF pipelines for multi-source integration and dynamic parameters.</li>
+          <li>Designed Power BI dashboards with real-time analytics.</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>Wipro Ltd | Client: Apple</h3>
+        <h4>Cloud Engineer | Nov 2022 – Apr 2023</h4>
+        <ul>
+          <li>Managed AWS Cloud Data Lake and automated ingestion pipelines.</li>
+          <li>Created Splunk dashboards and CloudFormation templates.</li>
+          <li>Trained junior engineers on DevOps and data automation.</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>Wipro Ltd | Client: Apple</h3>
+        <h4>Big Data Engineer | Aug 2022 – Oct 2022</h4>
+        <ul>
+          <li>Handled Hadoop clusters and optimized Spark performance.</li>
+          <li>Improved uptime through proactive monitoring and issue prevention.</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <!-- Certifications -->
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section class="projects" id="projects">
+    <h2 class="heading">My <span>Projects</span></h2>
+    <div class="projects-content">
+      <div class="box">
+        <h3>Vehicle Rental System (Aug 2024)</h3>
+        <p>
+          Designed and developed a vehicle rental application with customer and admin modules.
+          Implemented OOP-based classes (Vehicle, Customer, Staff, Booking), handled dynamic pricing,
+          rentals, penalties, and invoice generation.
+        </p>
+        <p>
+          Built using Python and SQL, the project included admin dashboards and customer booking interfaces.
+        </p>
+        <a href="https://github.com/abdulraheem48/Vehicle-Rental-System" target="_blank" class="btn">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS SECTION ===== -->
   <section class="education" id="certifications">
     <h2 class="heading">My <span>Certifications</span></h2>
     <div class="education-content">
       <div class="box">
         <ul>
-          <li><a href="https://www.dropbox.com/scl/fi/1bfpx7myap8x0a10e1dif/AZ-900.pdf?rlkey=nalv0u2fu2yh7vzpblld8lmql&st=t8eegvz2&dl=0" target="_blank">Microsoft Azure Fundamentals</a></li>
+          <li><a href="https://www.dropbox.com/scl/fi/1bfpx7myap8x0a10e1dif/AZ-900.pdf?dl=0" target="_blank">Microsoft Azure Fundamentals</a></li>
           <li><a href="https://storage.googleapis.com/bosscoderplatformindia.appspot.com/resume_upload_certificate/USER_ID/1760383101362_certificate.pdf" target="_blank">Databricks Certified Associate Developer</a></li>
           <li><a href="https://storage.googleapis.com/bosscoderplatformindia.appspot.com/resume_upload_certificate/USER_ID/1760383181623_AWS%20Certified%20Cloud%20Practitioner%20certificate.pdf" target="_blank">AWS Certified Cloud Practitioner</a></li>
           <li><a href="https://storage.googleapis.com/bosscoderplatformindia.appspot.com/resume_upload_certificate/USER_ID/1760383219940_AWS%20Certified%20Solutions%20Architect%20-%20Associate%20certificate.pdf" target="_blank">AWS Solutions Architect - Associate</a></li>
@@ -77,45 +174,21 @@
     </div>
   </section>
 
-  <!-- Skills -->
-  <section class="skills" id="skills">
-    <h2 class="heading">Technical <span>Skills</span></h2>
-    <div class="skills-box">
-      <div class="skill">Azure Data Factory</div>
-      <div class="skill">Databricks</div>
-      <div class="skill">SQL / PySpark</div>
-      <div class="skill">Snowflake</div>
-      <div class="skill">Hadoop</div>
-      <div class="skill">Git & CI/CD</div>
-    </div>
-  </section>
-
-  <!-- Contact -->
+  <!-- ===== CONTACT SECTION ===== -->
   <section class="contact" id="contact">
     <h2 class="heading">Contact <span>Me</span></h2>
     <div class="contact-info">
-      <p><i class='bx bx-phone'></i> +91 6303726373</p>
-      <p><i class='bx bx-map'></i> Hyderabad, India</p>
-
-      <div class="socials">
-        <a href="mailto:abdulraheeem687@gmail.com" target="_blank" title="Send me an email">
-          <i class='bx bxl-gmail'></i>
-        </a>
-        <a href="https://www.linkedin.com/in/shaik-abdul-raheem-950256176" target="_blank">
-          <i class='bx bxl-linkedin'></i>
-        </a>
-        <a href="https://github.com/abdulraheem48" target="_blank">
-          <i class='bx bxl-github'></i>
-        </a>
-      </div>
+      <p><i class="fas fa-envelope"></i> shaikabdulraheem48@gmail.com</p>
+      <p><i class="fas fa-map-marker-alt"></i> India</p>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- ===== FOOTER ===== -->
   <footer class="footer">
-    <p>© 2025 Shaik Abdul Raheem | All Rights Reserved</p>
+    <p>© 2025 Shaik Abdul Raheem. All rights reserved.</p>
   </footer>
 
+  <!-- Link JS file -->
   <script src="script.js"></script>
 </body>
 </html>

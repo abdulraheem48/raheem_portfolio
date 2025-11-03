@@ -1,16 +1,58 @@
-// Select all navigation links
-document.querySelectorAll('.navbar a').forEach(link => { // Finds each link inside navbar
-  link.addEventListener('click', function() { // Adds click event to each link
-    document.querySelectorAll('.navbar a').forEach(nav => nav.classList.remove('active')); // Removes 'active' class from all links
-    this.classList.add('active'); // Adds 'active' class to the clicked link
-  }); // End of click listener
-}); // End of loop over navbar links
+// ===== SMOOTH NAVIGATION ACTIVE HIGHLIGHT =====
 
-// Typing animation setup using Typed.js
-var typed = new Typed('.typed-text', { // Targets the span with class 'typed-text'
-  strings: ['Data Engineer', 'Cloud Engineer', 'Big Data Engineer'], // List of words to type
-  typeSpeed: 80, // Speed of typing (milliseconds per character)
-  backSpeed: 50, // Speed when deleting
-  backDelay: 1200, // Pause before deleting text
-  loop: true // Keeps repeating the animation forever
-}); // End of Typed.js initialization
+// Select all navigation links
+const navLinks = document.querySelectorAll('.navbar a');
+
+// Function to highlight active section in nav
+window.addEventListener('scroll', () => {
+  let current = '';
+  
+  // Get all sections
+  const sections = document.querySelectorAll('section');
+  const scrollY = window.pageYOffset;
+
+  // Loop through sections to find current
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 100; // Offset to adjust highlight
+    const sectionHeight = section.clientHeight;
+    if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+      current = section.getAttribute('id');
+    }
+  });
+
+  // Add active class to matching nav link
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href').includes(current)) {
+      link.classList.add('active');
+    }
+  });
+});
+
+// ===== SMOOTH SCROLL ON NAV CLICK =====
+navLinks.forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault(); // Prevent default jump
+    const targetId = link.getAttribute('href').substring(1); // Get section id
+    const targetSection = document.getElementById(targetId);
+    targetSection.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll
+  });
+});
+
+// ===== OPTIONAL: SMALL FADE-IN ON SCROLL =====
+
+// Select all boxes to animate
+const boxes = document.querySelectorAll('.box');
+
+// Observe when elements enter view
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('fade-in');
+      observer.unobserve(entry.target);
+    }
+  });
+});
+
+// Apply observer to each box
+boxes.forEach(box => observer.observe(box));
