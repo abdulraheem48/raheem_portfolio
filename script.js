@@ -1,58 +1,39 @@
-// ===== SMOOTH NAVIGATION ACTIVE HIGHLIGHT =====
+// Typing animation
+const text = ["Data Engineer", "Cloud Engineer", "Big Data Engineer"];
+let index = 0;
+let charIndex = 0;
+const typingSpan = document.querySelector(".typing");
 
-// Select all navigation links
-const navLinks = document.querySelectorAll('.navbar a');
+function type() {
+  if (charIndex < text[index].length) {
+    typingSpan.textContent += text[index].charAt(charIndex);
+    charIndex++;
+    setTimeout(type, 100);
+  } else {
+    setTimeout(erase, 1500);
+  }
+}
 
-// Function to highlight active section in nav
-window.addEventListener('scroll', () => {
-  let current = '';
-  
-  // Get all sections
-  const sections = document.querySelectorAll('section');
-  const scrollY = window.pageYOffset;
+function erase() {
+  if (charIndex > 0) {
+    typingSpan.textContent = text[index].substring(0, charIndex - 1);
+    charIndex--;
+    setTimeout(erase, 60);
+  } else {
+    index = (index + 1) % text.length;
+    setTimeout(type, 300);
+  }
+}
 
-  // Loop through sections to find current
-  sections.forEach(section => {
-    const sectionTop = section.offsetTop - 100; // Offset to adjust highlight
-    const sectionHeight = section.clientHeight;
-    if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-      current = section.getAttribute('id');
-    }
-  });
-
-  // Add active class to matching nav link
-  navLinks.forEach(link => {
-    link.classList.remove('active');
-    if (link.getAttribute('href').includes(current)) {
-      link.classList.add('active');
-    }
-  });
+document.addEventListener("DOMContentLoaded", () => {
+  if (typingSpan) type();
 });
 
-// ===== SMOOTH SCROLL ON NAV CLICK =====
-navLinks.forEach(link => {
-  link.addEventListener('click', (e) => {
-    e.preventDefault(); // Prevent default jump
-    const targetId = link.getAttribute('href').substring(1); // Get section id
-    const targetSection = document.getElementById(targetId);
-    targetSection.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll
+// Smooth scroll behavior
+document.querySelectorAll('.navbar a').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    target.scrollIntoView({ behavior: 'smooth' });
   });
 });
-
-// ===== OPTIONAL: SMALL FADE-IN ON SCROLL =====
-
-// Select all boxes to animate
-const boxes = document.querySelectorAll('.box');
-
-// Observe when elements enter view
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('fade-in');
-      observer.unobserve(entry.target);
-    }
-  });
-});
-
-// Apply observer to each box
-boxes.forEach(box => observer.observe(box));

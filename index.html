@@ -1,19 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Character encoding -->
   <meta charset="UTF-8" />
-
-  <!-- Responsive viewport for all devices -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- Page title -->
   <title>Shaik Abdul Raheem | Data Engineer Portfolio</title>
-
-  <!-- Link to external CSS file -->
   <link rel="stylesheet" href="style.css" />
-
-  <!-- Font Awesome icons -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -21,7 +12,6 @@
   <header class="header">
     <a href="#" class="logo">Raheem</a>
     <nav class="navbar">
-      <!-- Navigation links -->
       <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
@@ -36,22 +26,9 @@
   <section class="home" id="home">
     <div class="home-content">
       <h1>Hi, I'm <span>Shaik Abdul Raheem</span></h1>
-      <h3>Data Engineer | Cloud Engineer | Big Data Engineer</h3>
-      <p>
-        Passionate Data Engineer with hands-on experience in building scalable data pipelines,
-        automating workflows, and delivering business insights across Azure, AWS, and Databricks.
-        Skilled in transforming raw data into actionable analytics.
-      </p>
-      <div class="social-links">
-        <!-- Social icons -->
-        <a href="https://github.com/abdulraheem48"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com/in/shaik-abdul-raheem-950256176"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:shaikabdulraheem48@gmail.com"><i class="fas fa-envelope"></i></a>
-      </div>
-    </div>
-    <!-- Profile image -->
-    <div class="home-img">
-      <img src="data/profile.jpg" alt="Profile" />
+      <h3><span class="typing"></span></h3>
+      <p>Data Engineer | Cloud Engineer | Big Data Engineer</p>
+      <a href="#contact" class="btn">Contact Me</a>
     </div>
   </section>
 
@@ -60,38 +37,31 @@
     <h2 class="heading">About <span>Me</span></h2>
     <div class="about-content">
       <p>
-        I am a Data Engineer with expertise in end-to-end data solutions — from ingestion to analytics.
-        My focus is on designing optimized ETL pipelines, ensuring data quality, and integrating 
-        big data technologies like Spark, Hadoop, and Snowflake with Azure and AWS services.
-      </p>
-      <p>
-        Currently working at Wipro Ltd, I’ve contributed to projects for clients like Optum,
-        Bharat Petroleum, and Apple, focusing on automation, monitoring, and cloud data engineering.
-        My mission is to build data-driven systems that empower intelligent business decisions.
+        Passionate Data Engineer with hands-on experience in building data pipelines, cloud data solutions, and analytics dashboards.
+        Skilled in Azure, AWS, Databricks, PySpark, Airflow, and Snowflake. Enthusiastic about transforming raw data into meaningful insights.
       </p>
     </div>
   </section>
 
   <!-- ===== SKILLS SECTION ===== -->
-  <section class="skills" id="skills">
-    <h2 class="heading">Technical <span>Skills</span></h2>
-    <div class="skills-container">
-      <!-- Each skill icon -->
-      <div class="skill"><i class="fab fa-python"></i><p>Python</p></div>
-      <div class="skill"><i class="fab fa-aws"></i><p>AWS</p></div>
-      <div class="skill"><i class="fab fa-azure"></i><p>Azure</p></div>
-      <div class="skill"><i class="fas fa-database"></i><p>SQL</p></div>
-      <div class="skill"><i class="fas fa-project-diagram"></i><p>Apache Spark</p></div>
-      <div class="skill"><i class="fas fa-stream"></i><p>Airflow</p></div>
-      <div class="skill"><i class="fas fa-cube"></i><p>Snowflake</p></div>
-      <div class="skill"><i class="fas fa-layer-group"></i><p>Hadoop</p></div>
-      <div class="skill"><i class="fas fa-chart-bar"></i><p>Power BI</p></div>
-      <div class="skill"><i class="fas fa-chart-line"></i><p>Grafana</p></div>
-      <div class="skill"><i class="fas fa-chart-pie"></i><p>Matplotlib</p></div>
-      <div class="skill"><i class="fas fa-code-branch"></i><p>GitHub Actions</p></div>
-      <div class="skill"><i class="fas fa-laptop-code"></i><p>Databricks</p></div>
-      <div class="skill"><i class="fas fa-tools"></i><p>CI/CD</p></div>
-      <div class="skill"><i class="fas fa-brain"></i><p>Problem Solving</p></div>
+  <section id="skills" class="skills-section">
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-item"><img src="data/python.png" alt="Python"><p>Python</p></div>
+      <div class="skill-item"><img src="data/aws.png" alt="AWS"><p>AWS</p></div>
+      <div class="skill-item"><img src="data/azure.png" alt="Azure"><p>Azure</p></div>
+      <div class="skill-item"><img src="data/sql.png" alt="SQL"><p>SQL</p></div>
+      <div class="skill-item"><img src="data/spark.png" alt="Apache Spark"><p>Apache Spark</p></div>
+      <div class="skill-item"><img src="data/airflow.png" alt="Apache Airflow"><p>Apache Airflow</p></div>
+      <div class="skill-item"><img src="data/snowflake.png" alt="Snowflake"><p>Snowflake</p></div>
+      <div class="skill-item"><img src="data/hadoop.png" alt="Hadoop"><p>Hadoop</p></div>
+      <div class="skill-item"><img src="data/powerbi.png" alt="Power BI"><p>Power BI</p></div>
+      <div class="skill-item"><img src="data/grafana.png" alt="Grafana"><p>Grafana</p></div>
+      <div class="skill-item"><img src="data/matplotlib.png" alt="Matplotlib"><p>Matplotlib</p></div>
+      <div class="skill-item"><img src="data/githubactions.png" alt="GitHub Actions"><p>GitHub Actions</p></div>
+      <div class="skill-item"><img src="data/databricks.png" alt="Databricks"><p>Databricks</p></div>
+      <div class="skill-item"><img src="data/cicd.png" alt="CI/CD"><p>CI/CD</p></div>
+      <div class="skill-item"><img src="data/problem_solving.png" alt="Problem Solving"><p>Problem Solving</p></div>
     </div>
   </section>
 
@@ -99,7 +69,6 @@
   <section class="experience" id="experience">
     <h2 class="heading">Professional <span>Experience</span></h2>
     <div class="experience-content">
-      <!-- Each job box -->
       <div class="box">
         <h3>Wipro Ltd | Client: Optum (UnitedHealth Group)</h3>
         <h4>Data Engineer | Mar 2024 – Present</h4>
@@ -147,12 +116,9 @@
         <h3>Vehicle Rental System (Aug 2024)</h3>
         <p>
           Designed and developed a vehicle rental application with customer and admin modules.
-          Implemented OOP-based classes (Vehicle, Customer, Staff, Booking), handled dynamic pricing,
-          rentals, penalties, and invoice generation.
+          Implemented OOP-based classes, dynamic pricing, rentals, penalties, and invoice generation.
         </p>
-        <p>
-          Built using Python and SQL, the project included admin dashboards and customer booking interfaces.
-        </p>
+        <p>Built using Python and SQL with admin dashboards and booking interfaces.</p>
         <a href="https://github.com/abdulraheem48/Vehicle-Rental-System" target="_blank" class="btn">View on GitHub</a>
       </div>
     </div>
@@ -162,15 +128,13 @@
   <section class="education" id="certifications">
     <h2 class="heading">My <span>Certifications</span></h2>
     <div class="education-content">
-      <div class="box">
-        <ul>
-          <li><a href="https://www.dropbox.com/scl/fi/1bfpx7myap8x0a10e1dif/AZ-900.pdf?dl=0" target="_blank">Microsoft Azure Fundamentals</a></li>
-          <li><a href="https://storage.googleapis.com/bosscoderplatformindia.appspot.com/resume_upload_certificate/USER_ID/1760383101362_certificate.pdf" target="_blank">Databricks Certified Associate Developer</a></li>
-          <li><a href="https://storage.googleapis.com/bosscoderplatformindia.appspot.com/resume_upload_certificate/USER_ID/1760383181623_AWS%20Certified%20Cloud%20Practitioner%20certificate.pdf" target="_blank">AWS Certified Cloud Practitioner</a></li>
-          <li><a href="https://storage.googleapis.com/bosscoderplatformindia.appspot.com/resume_upload_certificate/USER_ID/1760383219940_AWS%20Certified%20Solutions%20Architect%20-%20Associate%20certificate.pdf" target="_blank">AWS Solutions Architect - Associate</a></li>
-          <li><a href="https://storage.googleapis.com/bosscoderplatformindia.appspot.com/resume_upload_certificate/USER_ID/1760383262419_SnowPro%20Core_S0027861.pdf" target="_blank">SnowPro Core</a></li>
-        </ul>
-      </div>
+      <ul>
+        <li><a href="https://www.dropbox.com/scl/fi/1bfpx7myap8x0a10e1dif/AZ-900.pdf?dl=0" target="_blank">Microsoft Azure Fundamentals</a></li>
+        <li><a href="https://storage.googleapis.com/bosscoderplatformindia.appspot.com/resume_upload_certificate/USER_ID/1760383101362_certificate.pdf" target="_blank">Databricks Certified Associate Developer</a></li>
+        <li><a href="https://storage.googleapis.com/bosscoderplatformindia.appspot.com/resume_upload_certificate/USER_ID/1760383181623_AWS%20Certified%20Cloud%20Practitioner%20certificate.pdf" target="_blank">AWS Certified Cloud Practitioner</a></li>
+        <li><a href="https://storage.googleapis.com/bosscoderplatformindia.appspot.com/resume_upload_certificate/USER_ID/1760383219940_AWS%20Certified%20Solutions%20Architect%20-%20Associate%20certificate.pdf" target="_blank">AWS Solutions Architect - Associate</a></li>
+        <li><a href="https://storage.googleapis.com/bosscoderplatformindia.appspot.com/resume_upload_certificate/USER_ID/1760383262419_SnowPro%20Core_S0027861.pdf" target="_blank">SnowPro Core</a></li>
+      </ul>
     </div>
   </section>
 
@@ -178,17 +142,16 @@
   <section class="contact" id="contact">
     <h2 class="heading">Contact <span>Me</span></h2>
     <div class="contact-info">
-      <p><i class="fas fa-envelope"></i> shaikabdulraheem48@gmail.com</p>
-      <p><i class="fas fa-map-marker-alt"></i> India</p>
+      <p>Email: <a href="mailto:shaikabdulraheem48@gmail.com">shaikabdulraheem48@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/shaik-abdul-raheem-950256176" target="_blank">View Profile</a></p>
+      <p>GitHub: <a href="https://github.com/abdulraheem48" target="_blank">abdulraheem48</a></p>
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <p>© 2025 Shaik Abdul Raheem. All rights reserved.</p>
+  <footer>
+    <p>© 2025 Shaik Abdul Raheem | All Rights Reserved</p>
   </footer>
 
-  <!-- Link JS file -->
   <script src="script.js"></script>
 </body>
 </html>
