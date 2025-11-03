@@ -77,6 +77,10 @@ body {
   font-size: 2rem;
   color: var(--main-color);
   margin-bottom: 1rem;
+  min-height: 50px;
+  font-weight: 600;
+  text-shadow: 0 0 10px var(--main-color);
+  letter-spacing: 1px;
 }
 
 .btn-box {
