@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shaik Abdul Raheem | Data Engineer Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-  <!-- ===== HEADER / NAVBAR ===== -->
+  <!-- ===== HEADER ===== -->
   <header class="header">
-    <a href="#" class="logo">Raheem</a>
+    <a href="#" class="logo"><span class="first">Abdul</span><span class="last">Raheem</span></a>
     <nav class="navbar">
       <a href="#home">Home</a>
       <a href="#about">About</a>
@@ -23,135 +23,296 @@
   </header>
 
   <!-- ===== HOME SECTION ===== -->
-  <section class="home" id="home">
-    <div class="home-content">
-      <h1>Hi, I'm <span>Shaik Abdul Raheem</span></h1>
-      <h3><span class="typing"></span></h3>
-      <p>Data Engineer | Cloud Engineer | Big Data Engineer</p>
-      <a href="#contact" class="btn">Contact Me</a>
+  <section id="home" class="home">
+  <div class="home-content">
+    <h1>Hi, I’m <span>Abdul <span class="highlight">Raheem</span></span></h1>
+    <h2>Data Engineer | Cloud Engineer | Big Data Engineer</h2>
+    <p>I’m a passionate Data Engineer experienced in building scalable data pipelines, optimizing cloud storage, and delivering insights through modern analytics tools.</p>
+
+    <!-- Buttons -->
+    <div class="home-buttons">
+      <a href="#contact" class="btn talk-btn">
+        <i class='bx bx-message-dots'></i> Talk to Me
+      </a>
+      <a href="data/Abdul_Raheem_Wipro_Data_Engineer.pdf" class="btn download-btn" download>
+        <i class='bx bx-download'></i> Download CV
+      </a>
     </div>
-  </section>
+  </div>
+
+  <div class="home-image">
+    <img src="data/profile.jpg" alt="Abdul Raheem">
+  </div>
+</section>
+
 
   <!-- ===== ABOUT SECTION ===== -->
   <section class="about" id="about">
     <h2 class="heading">About <span>Me</span></h2>
-    <div class="about-content">
-      <p>
-        Passionate Data Engineer with hands-on experience in building data pipelines, cloud data solutions, and analytics dashboards.
-        Skilled in Azure, AWS, Databricks, PySpark, Airflow, and Snowflake. Enthusiastic about transforming raw data into meaningful insights.
-      </p>
-    </div>
+    <p>Passionate Data Engineer with hands-on experience in building data pipelines, cloud data solutions, and analytics dashboards. Skilled in Azure, AWS, Databricks, PySpark, Airflow, and Snowflake. Enthusiastic about transforming raw data into meaningful insights.</p>
   </section>
 
-  <!-- ===== SKILLS SECTION ===== -->
-  <section id="skills" class="skills-section">
-    <h2>Technical Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-item"><img src="data/python.png" alt="Python"><p>Python</p></div>
-      <div class="skill-item"><img src="data/aws.png" alt="AWS"><p>AWS</p></div>
-      <div class="skill-item"><img src="data/azure.png" alt="Azure"><p>Azure</p></div>
-      <div class="skill-item"><img src="data/sql.png" alt="SQL"><p>SQL</p></div>
-      <div class="skill-item"><img src="data/spark.png" alt="Apache Spark"><p>Apache Spark</p></div>
-      <div class="skill-item"><img src="data/airflow.png" alt="Apache Airflow"><p>Apache Airflow</p></div>
-      <div class="skill-item"><img src="data/snowflake.png" alt="Snowflake"><p>Snowflake</p></div>
-      <div class="skill-item"><img src="data/hadoop.png" alt="Hadoop"><p>Hadoop</p></div>
-      <div class="skill-item"><img src="data/powerbi.png" alt="Power BI"><p>Power BI</p></div>
-      <div class="skill-item"><img src="data/grafana.png" alt="Grafana"><p>Grafana</p></div>
-      <div class="skill-item"><img src="data/matplotlib.png" alt="Matplotlib"><p>Matplotlib</p></div>
-      <div class="skill-item"><img src="data/githubactions.png" alt="GitHub Actions"><p>GitHub Actions</p></div>
-      <div class="skill-item"><img src="data/databricks.png" alt="Databricks"><p>Databricks</p></div>
-      <div class="skill-item"><img src="data/cicd.png" alt="CI/CD"><p>CI/CD</p></div>
-      <div class="skill-item"><img src="data/problem_solving.png" alt="Problem Solving"><p>Problem Solving</p></div>
+ <!-- ===== SKILLS SECTION ===== -->
+<section id="skills" class="skills-section">
+  <h2>Technical Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-item">
+      <div class="front">
+        <img src="data/python.png" alt="Python"><p>Python</p>
+      </div>
+      <div class="back">
+        <p>Python is a high-level language widely used for data analysis, automation, and AI.</p>
+      </div>
     </div>
-  </section>
+
+    <div class="skill-item">
+      <div class="front">
+        <img src="data/aws.png" alt="AWS"><p>AWS</p>
+      </div>
+      <div class="back">
+        <p>AWS provides cloud infrastructure and data services for scalable, secure solutions.</p>
+      </div>
+    </div>
+
+    <div class="skill-item">
+      <div class="front">
+        <img src="data/azure.png" alt="Azure"><p>Azure</p>
+      </div>
+      <div class="back">
+        <p>Azure offers cloud computing services for data storage, analytics, and DevOps pipelines.</p>
+      </div>
+    </div>
+
+    <div class="skill-item">
+      <div class="front">
+        <img src="data/sql.png" alt="SQL"><p>SQL</p>
+      </div>
+      <div class="back">
+        <p>SQL is used to query, manipulate, and manage relational databases efficiently.</p>
+      </div>
+    </div>
+
+    <div class="skill-item">
+      <div class="front">
+        <img src="data/spark.png" alt="Apache Spark"><p>Apache Spark</p>
+      </div>
+      <div class="back">
+        <p>Apache Spark enables large-scale data processing with in-memory computation speed.</p>
+      </div>
+    </div>
+
+    <div class="skill-item">
+      <div class="front">
+        <img src="data/airflow.png" alt="Apache Airflow"><p>Apache Airflow</p>
+      </div>
+      <div class="back">
+        <p>Airflow orchestrates data pipelines with scheduling, dependencies, and automation.</p>
+      </div>
+    </div>
+
+    <div class="skill-item">
+      <div class="front">
+        <img src="data/snowflake.png" alt="Snowflake"><p>Snowflake</p>
+      </div>
+      <div class="back">
+        <p>Snowflake is a cloud data warehouse for scalable analytics and data sharing.</p>
+      </div>
+    </div>
+
+    <div class="skill-item">
+      <div class="front">
+        <img src="data/hadoop.png" alt="Hadoop"><p>Hadoop</p>
+      </div>
+      <div class="back">
+        <p>Hadoop provides distributed storage and processing for big data workloads.</p>
+      </div>
+    </div>
+
+    <div class="skill-item">
+      <div class="front">
+        <img src="data/powerbi.png" alt="Power BI"><p>Power BI</p>
+      </div>
+      <div class="back">
+        <p>Power BI is a data visualization tool for creating interactive business dashboards.</p>
+      </div>
+    </div>
+
+    <div class="skill-item">
+      <div class="front">
+        <img src="data/grafana.png" alt="Grafana"><p>Grafana</p>
+      </div>
+      <div class="back">
+        <p>Grafana is used to monitor metrics and visualize data in real time.</p>
+      </div>
+    </div>
+
+    <div class="skill-item">
+      <div class="front">
+        <img src="data/matplotlib.png" alt="Matplotlib"><p>Matplotlib</p>
+      </div>
+      <div class="back">
+        <p>Matplotlib is a Python library for data visualization through plots and charts.</p>
+      </div>
+    </div>
+
+    <div class="skill-item">
+      <div class="front">
+        <img src="data/github_actions.png" alt="GitHub Actions"><p>GitHub Actions</p>
+      </div>
+      <div class="back">
+        <p>GitHub Actions automates CI/CD workflows directly within your repositories.</p>
+      </div>
+    </div>
+
+    <div class="skill-item">
+      <div class="front">
+        <img src="data/databricks.png" alt="Databricks"><p>Databricks</p>
+      </div>
+      <div class="back">
+        <p>Databricks unifies data engineering and machine learning on Apache Spark.</p>
+      </div>
+    </div>
+
+    <div class="skill-item">
+      <div class="front">
+        <img src="data/ci_cd.png" alt="CI/CD"><p>CI/CD</p>
+      </div>
+      <div class="back">
+        <p>CI/CD automates integration and deployment to ensure faster, reliable releases.</p>
+      </div>
+    </div>
+
+    <div class="skill-item">
+      <div class="front">
+        <img src="data/problem_solving.png" alt="Problem Solving"><p>Problem Solving</p>
+      </div>
+      <div class="back">
+        <p>Problem-solving involves analyzing issues and creating efficient technical solutions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
   <!-- ===== EXPERIENCE SECTION ===== -->
-  <section class="experience" id="experience">
-    <h2 class="heading">Professional <span>Experience</span></h2>
-    <div class="experience-content">
-      <div class="box">
-        <h3>Wipro Ltd | Client: Optum (UnitedHealth Group)</h3>
-        <h4>Data Engineer | Mar 2024 – Present</h4>
-        <ul>
-          <li>Resolved production issues and improved delivery efficiency.</li>
-          <li>Ensured SLA compliance for client data pipelines and reporting.</li>
-          <li>Collaborated cross-functionally for system stability and optimization.</li>
-          <li>Automated repetitive workflows for better productivity.</li>
-        </ul>
-      </div>
-      <div class="box">
-        <h3>Wipro Ltd | Client: Bharat Petroleum</h3>
-        <h4>Data Engineer | Jun 2023 – Feb 2024</h4>
-        <ul>
-          <li>Developed 40+ KPIs using PySpark and Databricks for business insights.</li>
-          <li>Built ADF pipelines for multi-source integration and dynamic parameters.</li>
-          <li>Designed Power BI dashboards with real-time analytics.</li>
-        </ul>
-      </div>
-      <div class="box">
-        <h3>Wipro Ltd | Client: Apple</h3>
-        <h4>Cloud Engineer | Nov 2022 – Apr 2023</h4>
-        <ul>
-          <li>Managed AWS Cloud Data Lake and automated ingestion pipelines.</li>
-          <li>Created Splunk dashboards and CloudFormation templates.</li>
-          <li>Trained junior engineers on DevOps and data automation.</li>
-        </ul>
-      </div>
-      <div class="box">
-        <h3>Wipro Ltd | Client: Apple</h3>
-        <h4>Big Data Engineer | Aug 2022 – Oct 2022</h4>
-        <ul>
-          <li>Handled Hadoop clusters and optimized Spark performance.</li>
-          <li>Improved uptime through proactive monitoring and issue prevention.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+<section class="experience" id="experience">
+  <h2 class="heading">My <span>Experience</span></h2>
+  <div class="exp-container">
 
-  <!-- ===== PROJECTS SECTION ===== -->
-  <section class="projects" id="projects">
-    <h2 class="heading">My <span>Projects</span></h2>
-    <div class="projects-content">
-      <div class="box">
-        <h3>Vehicle Rental System (Aug 2024)</h3>
-        <p>
-          Designed and developed a vehicle rental application with customer and admin modules.
-          Implemented OOP-based classes, dynamic pricing, rentals, penalties, and invoice generation.
-        </p>
-        <p>Built using Python and SQL with admin dashboards and booking interfaces.</p>
-        <a href="https://github.com/abdulraheem48/Vehicle-Rental-System" target="_blank" class="btn">View on GitHub</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CERTIFICATIONS SECTION ===== -->
-  <section class="education" id="certifications">
-    <h2 class="heading">My <span>Certifications</span></h2>
-    <div class="education-content">
+    <!-- Wipro - Optum -->
+    <div class="exp-card">
+      <h3>Wipro Ltd | Client: Optum (UnitedHealth Group)</h3>
+      <h4>Data Engineer | Mar 2024 – Present</h4>
       <ul>
-        <li><a href="https://www.dropbox.com/scl/fi/1bfpx7myap8x0a10e1dif/AZ-900.pdf?dl=0" target="_blank">Microsoft Azure Fundamentals</a></li>
-        <li><a href="https://storage.googleapis.com/bosscoderplatformindia.appspot.com/resume_upload_certificate/USER_ID/1760383101362_certificate.pdf" target="_blank">Databricks Certified Associate Developer</a></li>
-        <li><a href="https://storage.googleapis.com/bosscoderplatformindia.appspot.com/resume_upload_certificate/USER_ID/1760383181623_AWS%20Certified%20Cloud%20Practitioner%20certificate.pdf" target="_blank">AWS Certified Cloud Practitioner</a></li>
-        <li><a href="https://storage.googleapis.com/bosscoderplatformindia.appspot.com/resume_upload_certificate/USER_ID/1760383219940_AWS%20Certified%20Solutions%20Architect%20-%20Associate%20certificate.pdf" target="_blank">AWS Solutions Architect - Associate</a></li>
-        <li><a href="https://storage.googleapis.com/bosscoderplatformindia.appspot.com/resume_upload_certificate/USER_ID/1760383262419_SnowPro%20Core_S0027861.pdf" target="_blank">SnowPro Core</a></li>
+        <li>Ensured seamless execution of client processes by proactively identifying and resolving failures, reducing L2 team dependency and improving operational efficiency.</li>
+        <li>Maintained SLA compliance for response file deliveries, directly contributing to client satisfaction and service reliability.</li>
+        <li>Coordinated cross-functional updates and provided timely assistance to ensure readiness and issue resolution.</li>
+        <li>Collaborated effectively during critical production support scenarios, ensuring business continuity.</li>
+        <li>Explored product repositories for deeper insights into system architecture and data flow, improving support efficiency.</li>
+        <li>Proposed automation ideas to streamline workflows and enhance productivity.</li>
       </ul>
     </div>
+
+    <!-- Wipro - Bharat Petroleum -->
+    <div class="exp-card">
+      <h3>Wipro Ltd | Client: Bharat Petroleum</h3>
+      <h4>Data Engineer | Jun 2024 – Feb 2025</h4>
+      <ul>
+        <li>Developed 40+ KPIs by extracting and transforming data from multiple sources to meet client requirements.</li>
+        <li>Created Databricks job workflows for automated data refresh and timely insights.</li>
+        <li>Utilized SQL and PySpark for scalable, accurate data processing and transformation.</li>
+        <li>Developed ADF data flows integrating Databricks and Spark for real-time processing.</li>
+        <li>Automated ADF pipeline configurations using dynamic parameters for flexible orchestration.</li>
+        <li>Integrated data between SharePoint and Microsoft Dataverse, maintaining historical data in Databricks.</li>
+        <li>Built Power BI dashboards and SQL reports for real-time insights and KPI tracking.</li>
+        <li>Optimized ADF data flow efficiency and reliability through performance tuning.</li>
+      </ul>
+    </div>
+
+    <!-- Wipro - Apple Cloud Engineer -->
+    <div class="exp-card">
+      <h3>Wipro Ltd | Client: Apple</h3>
+      <h4>Cloud Engineer | Nov 2022 – Apr 2024</h4>
+      <ul>
+        <li>Led cloud operations, improving data management efficiency by 120% through workflow automation.</li>
+        <li>Developed AWS Cloud Data Lakes, enhancing data integration and scalability.</li>
+        <li>Optimized ETL/ELT pipelines and implemented monitoring for proactive issue detection.</li>
+        <li>Deployed and managed AWS resources (S3, IAM, EKS) using CLI and CloudFormation.</li>
+        <li>Built CI/CD pipelines for automated infrastructure provisioning.</li>
+        <li>Created Splunk dashboards for log analytics, improving operational insights.</li>
+        <li>Mentored new team members and facilitated knowledge transfer sessions.</li>
+      </ul>
+    </div>
+
+    <!-- Wipro - Apple Big Data Engineer -->
+    <div class="exp-card">
+      <h3>Wipro Ltd | Client: Apple</h3>
+      <h4>Big Data Engineer | Aug 2022 – Oct 2022</h4>
+      <ul>
+        <li>Managed large Hadoop clusters to optimize disk space and improve performance.</li>
+        <li>Analyzed Spark and Splunk logs to resolve job failures and minimize downtime.</li>
+        <li>Implemented advanced log monitoring strategies for faster root cause analysis.</li>
+        <li>Streamlined disk space management to improve cluster reliability and resource efficiency.</li>
+        <li>Maintained high system uptime during maintenance and patch activities.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- ===== PROJECTS SECTION ===== -->
+<section id="projects" class="projects">
+  <h2 class="heading">My <span>Projects</span></h2>
+
+  <div class="project-container">
+    <div class="project-card">
+      <h3>Vehicle Rental System</h3>
+      <h4>Aug 2024</h4>
+      <ul>
+        <li>Designed and developed a vehicle rental application with separate interfaces for customers and staff.</li>
+        <li>Implemented OOP-based classes (Vehicle, Customer, Staff, Booking) for structured data management.</li>
+        <li>Built modules to add, update, delete, and search vehicles and customers with filters for type, price, and availability.</li>
+        <li>Developed a booking and rental system to handle reservations, calculate rental costs, and manage vehicle availability.</li>
+        <li>Created admin features for staff login, booking management, and revenue reporting.</li>
+        <li>Implemented vehicle return and invoice generation with automatic fee and penalty calculations.</li>
+        <li>Ensured input validation, error handling, and tested the system for smooth user experience.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+  <!-- ===== CERTIFICATIONS SECTION ===== -->
+   <!-- ===== CERTIFICATIONS ===== -->
+  <section class="education" id="certifications">
+    <h2 class="heading">My <span>Certifications</span></h2>
+    <ul class="cert-list">
+      <li><a href="https://storage.googleapis.com/bosscoderplatformindia.appspot.com/resume_upload_certificate/USER_ID/1762173427093_AZ-900.pdf" target="_blank">Microsoft Azure Fundamentals</a></li>
+      <li><a href="https://storage.googleapis.com/bosscoderplatformindia.appspot.com/resume_upload_certificate/USER_ID/1760383101362_certificate.pdf" target="_blank">Databricks Certified Associate Developer</a></li>
+      <li><a href="https://storage.googleapis.com/bosscoderplatformindia.appspot.com/resume_upload_certificate/USER_ID/1760383181623_AWS%20Certified%20Cloud%20Practitioner%20certificate.pdf" target="_blank">AWS Certified Cloud Practitioner</a></li>
+      <li><a href="https://storage.googleapis.com/bosscoderplatformindia.appspot.com/resume_upload_certificate/USER_ID/1760383219940_AWS%20Certified%20Solutions%20Architect%20-%20Associate%20certificate.pdf" target="_blank">AWS Solutions Architect – Associate</a></li>
+      <li><a href="https://storage.googleapis.com/bosscoderplatformindia.appspot.com/resume_upload_certificate/USER_ID/1760383262419_SnowPro%20Core_S0027861.pdf" target="_blank">SnowPro Core</a></li>
+    </ul>
   </section>
 
   <!-- ===== CONTACT SECTION ===== -->
   <section class="contact" id="contact">
     <h2 class="heading">Contact <span>Me</span></h2>
     <div class="contact-info">
-      <p>Email: <a href="mailto:shaikabdulraheem48@gmail.com">shaikabdulraheem48@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/shaik-abdul-raheem-950256176" target="_blank">View Profile</a></p>
-      <p>GitHub: <a href="https://github.com/abdulraheem48" target="_blank">abdulraheem48</a></p>
+      <p><i class='bx bx-envelope'></i> <a href="mailto:abdulraheeem687@gmail.com">abdulraheeem687@gmail.com</a></p>
+      <p><i class='bx bx-phone'></i> <a href="tel:+916303726373">+91 6303726373</a></p>
+      <p><i class='bx bx-map'></i> Hyderabad, India</p>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/shaik-abdul-raheem-950256176" target="_blank"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://github.com/abdulraheem48" target="_blank"><i class='bx bxl-github'></i></a>
+        <a href="mailto:abdulraheeem687@gmail.com" target="_blank"><i class='bx bxl-gmail'></i></a>
+      </div>
     </div>
   </section>
 
-  <footer>
-    <p>© 2025 Shaik Abdul Raheem | All Rights Reserved</p>
-  </footer>
-
+  <!-- JS (Load Skill Data First, Then Main Script) -->
+  <script src="data/skills_description.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

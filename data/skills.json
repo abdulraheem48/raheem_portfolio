@@ -1,0 +1,77 @@
+[
+  {
+    "name": "Python",
+    "image": "data/python.png",
+    "description": "Python is a high-level, interpreted programming language known for its readability, versatility, and vast library support."
+  },
+  {
+    "name": "AWS",
+    "image": "data/aws.png",
+    "description": "Amazon Web Services (AWS) is a leading cloud platform offering scalable computing, storage, and analytics services."
+  },
+  {
+    "name": "Azure",
+    "image": "data/azure.png",
+    "description": "Microsoft Azure is a cloud computing platform for building, managing, and deploying applications through Microsoft-managed data centers."
+  },
+  {
+    "name": "SQL",
+    "image": "data/sql.png",
+    "description": "SQL (Structured Query Language) is used to manage and manipulate relational databases efficiently."
+  },
+  {
+    "name": "Spark",
+    "image": "data/spark.png",
+    "description": "Apache Spark is a fast, distributed data processing engine for large-scale analytics and machine learning."
+  },
+  {
+    "name": "Airflow",
+    "image": "data/airflow.png",
+    "description": "Apache Airflow is an open-source workflow orchestration tool for scheduling, monitoring, and automating data pipelines."
+  },
+  {
+    "name": "Snowflake",
+    "image": "data/snowflake.png",
+    "description": "Snowflake is a cloud-based data warehouse solution that supports data storage, processing, and analytics with high performance."
+  },
+  {
+    "name": "Hadoop",
+    "image": "data/hadoop.png",
+    "description": "Apache Hadoop is a framework that allows for distributed storage and processing of large data sets using a cluster of computers."
+  },
+  {
+    "name": "Power BI",
+    "image": "data/powerbi.png",
+    "description": "Power BI is Microsoft’s business analytics tool that provides interactive visualizations and real-time business intelligence dashboards."
+  },
+  {
+    "name": "Grafana",
+    "image": "data/grafana.png",
+    "description": "Grafana is an open-source platform for monitoring and observability, used to visualize time-series data and metrics."
+  },
+  {
+    "name": "Matplotlib",
+    "image": "data/matplotlib.png",
+    "description": "Matplotlib is a Python library for creating static, animated, and interactive visualizations in data analysis."
+  },
+  {
+    "name": "GitHub Actions",
+    "image": "data/github_actions.png",
+    "description": "GitHub Actions automates software workflows such as building, testing, and deployment directly from GitHub repositories."
+  },
+  {
+    "name": "Databricks",
+    "image": "data/databricks.png",
+    "description": "Databricks is a unified analytics platform that integrates data engineering, machine learning, and collaborative data science."
+  },
+  {
+    "name": "CI/CD",
+    "image": "data/ci_cd.png",
+    "description": "CI/CD (Continuous Integration/Continuous Deployment) automates code integration, testing, and deployment for faster delivery."
+  },
+  {
+    "name": "Problem Solving",
+    "image": "data/problem_solving.png",
+    "description": "Problem solving is the ability to analyze, design, and implement logical solutions efficiently to overcome technical challenges."
+  }
+]

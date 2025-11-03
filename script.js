@@ -1,39 +1,104 @@
-// Typing animation
-const text = ["Data Engineer", "Cloud Engineer", "Big Data Engineer"];
-let index = 0;
-let charIndex = 0;
-const typingSpan = document.querySelector(".typing");
-
-function type() {
-  if (charIndex < text[index].length) {
-    typingSpan.textContent += text[index].charAt(charIndex);
-    charIndex++;
-    setTimeout(type, 100);
-  } else {
-    setTimeout(erase, 1500);
-  }
-}
-
-function erase() {
-  if (charIndex > 0) {
-    typingSpan.textContent = text[index].substring(0, charIndex - 1);
-    charIndex--;
-    setTimeout(erase, 60);
-  } else {
-    index = (index + 1) % text.length;
-    setTimeout(type, 300);
-  }
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  if (typingSpan) type();
-});
-
-// Smooth scroll behavior
+// ========================================
+// ===== NAVIGATION SMOOTH SCROLL =====
+// ========================================
 document.querySelectorAll('.navbar a').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    target.scrollIntoView({ behavior: 'smooth' });
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
   });
 });
+
+// ========================================
+// ===== SKILLS FLIP ANIMATION =====
+// ========================================
+const skillItems = document.querySelectorAll('.skill-item');
+
+skillItems.forEach(item => {
+  item.addEventListener('mouseenter', () => {
+    item.classList.add('flipped');
+  });
+  item.addEventListener('mouseleave', () => {
+    item.classList.remove('flipped');
+  });
+});
+
+// Intersection Observer for skill reveal animation
+const skillObserver = new IntersectionObserver(entries => {
+  entries.forEach((entry, index) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => {
+        entry.target.classList.add('visible');
+      }, index * 120);
+    }
+  });
+}, { threshold: 0.2 });
+
+skillItems.forEach(item => skillObserver.observe(item));
+
+
+// ========================================
+// ===== EXPERIENCE CARD ANIMATION =====
+// ========================================
+const expCards = document.querySelectorAll('.exp-card');
+
+const expObserver = new IntersectionObserver(entries => {
+  entries.forEach((entry, index) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => {
+        entry.target.classList.add('visible');
+      }, index * 200);
+    }
+  });
+}, { threshold: 0.2 });
+
+expCards.forEach(card => expObserver.observe(card));
+
+
+// ========================================
+// ===== PROJECT CARD ANIMATION =====
+// ========================================
+const projectCards = document.querySelectorAll('.project-card');
+
+const projectObserver = new IntersectionObserver(entries => {
+  entries.forEach((entry, index) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => {
+        entry.target.classList.add('visible');
+      }, index * 200);
+    }
+  });
+}, { threshold: 0.2 });
+
+projectCards.forEach(card => projectObserver.observe(card));
+
+
+// ========================================
+// ===== BUTTON GLOW EFFECT =====
+// ========================================
+const glowButtons = document.querySelectorAll('.btn, .navbar a');
+
+glowButtons.forEach(button => {
+  button.addEventListener('mouseenter', () => {
+    button.classList.add('glow');
+  });
+  button.addEventListener('mouseleave', () => {
+    button.classList.remove('glow');
+  });
+});
+
+// ========================================
+// ===== OPTIONAL: AUTO FLIP FOR SKILLS =====
+// (If you want skill cards to flip automatically)
+// ========================================
+let autoFlipIndex = 0;
+setInterval(() => {
+  skillItems.forEach((item, index) => {
+    if (index === autoFlipIndex) {
+      item.classList.add('flipped');
+      setTimeout(() => item.classList.remove('flipped'), 2000);
+    }
+  });
+  autoFlipIndex = (autoFlipIndex + 1) % skillItems.length;
+}, 2500);
