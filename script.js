@@ -137,19 +137,36 @@ if (talkBtn) {
 }
 
 // ========================================
-// ===== MOBILE MENU TOGGLE =====
+// ===== MOBILE MENU TOGGLE (with Auto-Close)
 // ========================================
 const menuToggle = document.getElementById("menu-toggle");
 const navbar = document.querySelector(".navbar");
+const mobileNavLinks = document.querySelectorAll(".navbar a");
 
 if (menuToggle) {
+  // Open/close menu when clicking hamburger icon
   menuToggle.addEventListener("click", () => {
     navbar.classList.toggle("active");
     const icon = menuToggle.querySelector("i");
     icon.classList.toggle("bx-menu");
     icon.classList.toggle("bx-x");
   });
+
+  // Auto-close menu when any nav link is clicked
+  mobileNavLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      if (navbar.classList.contains("active")) {
+        navbar.classList.remove("active");
+
+        // Reset icon to hamburger (☰)
+        const icon = menuToggle.querySelector("i");
+        icon.classList.remove("bx-x");
+        icon.classList.add("bx-menu");
+      }
+    });
+  });
 }
+
 
 // ========================================
 // ===== ROLE TYPING ANIMATION (HOME) =====
