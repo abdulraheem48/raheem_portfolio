@@ -549,7 +549,7 @@ header {
 /* ✅ Centered grid layout */
 .cert-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 per row */
+  grid-template-columns: repeat(4, 1fr);
   gap: 25px;
   justify-content: center;
   justify-items: center;
@@ -557,7 +557,7 @@ header {
 
 /* ✅ Center the 5th certification */
 .cert-container > .cert-card:nth-child(5) {
-  grid-column: 2 / span 2; /* centers it between 2nd and 3rd columns */
+  grid-column: 2 / span 2;
 }
 
 /* ✅ Certification card styling */
@@ -570,41 +570,93 @@ header {
   text-align: center;
   animation: fadeInUp 1s ease both;
   width: 220px;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .cert-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 0 25px rgba(0, 229, 255, 0.4);
+  background: #151515;
 }
 
+/* ✅ Certificate Icon (Glow Effect) */
 .cert-card img {
   width: 80px;
   height: auto;
   margin-bottom: 15px;
-  filter: drop-shadow(0 0 5px rgba(0, 229, 255, 0.4));
+  transition: transform 0.4s ease, filter 0.4s ease, box-shadow 0.5s ease;
+  filter: drop-shadow(0 0 8px rgba(0, 229, 255, 0.4));
+  animation: softGlow 3s infinite ease-in-out;
 }
 
-.cert-card a {
-  display: block;
+.cert-card:hover img {
+  transform: scale(1.12);
+  filter: drop-shadow(0 0 20px rgba(0, 229, 255, 0.8)) drop-shadow(0 0 35px rgba(245, 197, 24, 0.4));
+}
+
+/* ✅ Certificate text */
+.cert-card p {
   color: #fff;
   font-size: 1rem;
   font-weight: 500;
-  text-decoration: none;
   transition: color 0.3s ease;
+  margin: 0;
 }
 
-.cert-card a:hover {
+.cert-card:hover p {
   color: #f5c518;
 }
 
-/* ✅ Responsive adjustments */
+/* ✅ Certification date details (updated colors) */
+.cert-card small {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.8rem;
+  color: #9beefc; /* soft cyan text for base */
+  letter-spacing: 0.3px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  text-shadow: 0 0 6px rgba(0, 234, 255, 0.25);
+}
+
+.cert-card small span {
+  color: #f5c518; /* gold accent for date values */
+  font-weight: 600;
+  text-shadow: 0 0 8px rgba(245, 197, 24, 0.3);
+}
+
+.cert-card:hover small {
+  color: #00eaff; /* bright cyan on hover */
+  text-shadow: 0 0 10px rgba(0, 234, 255, 0.5);
+}
+
+.cert-card:hover small span {
+  color: #00eaff; /* date values turn bright cyan on hover */
+  text-shadow: 0 0 12px rgba(0, 234, 255, 0.6);
+}
+
+
+/* ✨ Soft glow animation for icons */
+@keyframes softGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 8px rgba(0, 229, 255, 0.3));
+  }
+  50% {
+    filter: drop-shadow(0 0 16px rgba(0, 229, 255, 0.6));
+  }
+}
+
+/* Responsive layout */
 @media (max-width: 900px) {
   .cert-container {
     grid-template-columns: repeat(2, 1fr);
   }
-
   .cert-container > .cert-card:nth-child(5) {
-    grid-column: auto; /* back to normal on smaller screens */
+    grid-column: auto;
   }
 }
 
@@ -613,6 +665,57 @@ header {
     grid-template-columns: 1fr;
   }
 }
+
+/* Certification Note */
+.note {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0, 234, 255, 0.08);
+  border: 1px solid rgba(0, 234, 255, 0.25);
+  border-radius: 10px;
+  padding: 10px 22px;
+  font-size: 0.95rem;
+  color: #00eaff;
+  margin-bottom: 35px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 12px rgba(0, 234, 255, 0.15);
+  transition: all 0.3s ease;
+  justify-content: center;
+}
+
+.note span {
+  color: #f5c518;
+  font-weight: 600;
+}
+
+.note i {
+  color: #f5c518;
+  font-size: 1rem;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+.note:hover {
+  background: rgba(0, 234, 255, 0.15);
+  border-color: #00eaff;
+  box-shadow: 0 0 25px rgba(0, 234, 255, 0.35);
+  transform: scale(1.04);
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+}
+
+
 
 /* ============================
    EDUCATION SECTION
