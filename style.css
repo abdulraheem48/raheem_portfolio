@@ -336,11 +336,15 @@ header {
 
 /* Front face content */
 .skill-item .front img {
-  width: 55px;
-  height: 55px;
+  width: 100px;
+  height: 100px;
   margin-bottom: 0.5rem;
   transition: all 0.4s ease;
+  background: transparent;
+  mix-blend-mode: lighten; /* Makes white backgrounds blend with dark */
+  filter: brightness(1.2) contrast(1.1);
 }
+
 
 .skill-item .front p {
   font-size: 0.9rem;
