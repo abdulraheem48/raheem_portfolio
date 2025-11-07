@@ -461,13 +461,13 @@ header {
 
 /* 🔹 Highlighted (Bold) Text Style */
 .exp-card b {
-  color: #d8bfff; /* Gold highlight */
+  color: #c79aff; /* brighter lavender-purple */
   font-weight: 600;
 }
 
 /* Optional glow effect (for visual pop) */
 .exp-card b:hover {
-  text-shadow: 0 0 5px rgba(245, 197, 24, 0.6);
+  text-shadow: 0 0 8px rgba(199, 154, 255, 0.8);
   transition: text-shadow 0.3s ease;
 }
 
