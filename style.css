@@ -393,7 +393,6 @@ header {
   animation: boxGlow 3s infinite ease-in-out;
 }
 
-
 /* ============================
    EXPERIENCE SECTION
 ============================ */
@@ -459,6 +458,19 @@ header {
   margin-left: 20px;
   line-height: 1.6;
 }
+
+/* 🔹 Highlighted (Bold) Text Style */
+.exp-card b {
+  color: #d8bfff; /* Gold highlight */
+  font-weight: 600;
+}
+
+/* Optional glow effect (for visual pop) */
+.exp-card b:hover {
+  text-shadow: 0 0 5px rgba(245, 197, 24, 0.6);
+  transition: text-shadow 0.3s ease;
+}
+
 
 /* ============================
    PROJECTS SECTION
@@ -791,7 +803,6 @@ header {
   }
 }
 
-
 /* ============================
    CONTACT SECTION
 ============================ */
@@ -799,13 +810,13 @@ header {
   background: #111;
   padding: 80px 10%;
   text-align: center;
-  color: #fff;
+  color: #e0e0e0; /* light blue text for better readability */
 }
 
 .contact .heading {
   font-size: 2.2rem;
   margin-bottom: 40px;
-  color: #fff;
+  color: #ffffff;
 }
 
 .contact .heading span {
@@ -820,24 +831,24 @@ header {
 .contact-info p {
   font-size: 1.1rem;
   margin: 12px 0;
-  color: #fff;
+  color: #cfefff; /* softer text tone */
 }
 
 .contact-info i {
-  color: #22d3ee;
+  color: #00e0ff; /* bright blue accent for icons */
   margin-right: 10px;
   font-size: 1.3rem;
   vertical-align: middle;
 }
 
 .contact-info a {
-  color: #fff;
+  color: #cfefff;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .contact-info a:hover {
-  color: #f5c518;
+  color: #f5c518; /* lighter blue on hover */
 }
 
 /* Social Icons */
@@ -848,14 +859,14 @@ header {
 .socials a {
   display: inline-block;
   margin: 0 10px;
-  color: #22d3ee;
+  color: #ffd966; /* icon base color */
   font-size: 1.8rem;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .socials a:hover {
   transform: scale(1.2);
-  color: #f5c518;
+  color: #fce8b2; /* gold hover accent */
 }
 
 /* ===== Anchor Scroll Fix ===== */
